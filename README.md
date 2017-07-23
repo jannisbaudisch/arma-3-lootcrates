@@ -5,7 +5,7 @@ This is designed for Exile, but can be used in any other mission without problem
 
 ### Installing
 
-1. Download files ([Link](https://bitbucket.org/nocapes/arma-3-lootcrates/get/15c99127e0d0.zip "Download Arma 3 Lootcrates"))
+1. Download files ([Link](https://github.com/Tschuuut/arma-3-lootcrates/archive/master.zip "Download Arma 3 Lootcrates"))
 2. Copy the @nocapes_lootcrates folder into your Arma3/Arma3Server folder
 3. Open the config.sqf under /@nocapes_lootcrates/addons/lootcrates/ and configure it to your preferences
 4. Delete old lootcrates.pbo file
