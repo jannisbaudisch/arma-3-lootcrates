@@ -41,5 +41,5 @@ for "_i" from 1 to (NOCLC_minCrates + floor random(NOCLC_maxCrates - NOCLC_minCr
 };
 
 diag_log 		"-------------------------------------------------------------";
-diag_log format["--- Initialized Arma 3 Lootcrates | Init took %1 seconds ---",_time - diag_tickTime];
+diag_log format["--- Initialized Arma 3 Lootcrates | Init took %1 seconds ---",diag_tickTime - _time];
 diag_log 		"-------------------------------------------------------------";
