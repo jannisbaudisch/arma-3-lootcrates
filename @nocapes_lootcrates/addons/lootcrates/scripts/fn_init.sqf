@@ -18,19 +18,19 @@ for "_i" from 1 to (NOCLC_minCrates + floor random(NOCLC_maxCrates - NOCLC_minCr
 	clearBackpackCargoGlobal _crate;
 	
 	{
-		_crate addWeaponCargoGlobal [_x, 1];
+		_crate addWeaponCargoGlobal [_x select 0, (_x select 1) + floor random(((_x select 2) + 1) - (_x select 1))];
 	} forEach (_type select 1);
 
 	{
-		_crate addMagazineCargoGlobal [_x, 1];
+		_crate addMagazineCargoGlobal [_x select 0, (_x select 1) + floor random(((_x select 2) + 1) - (_x select 1))];
 	} forEach (_type select 2);
 
 	{
-		_crate addItemCargoGlobal [_x, 1];
+		_crate addItemCargoGlobal [_x select 0, (_x select 1) + floor random(((_x select 2) + 1) - (_x select 1))];
 	} forEach (_type select 3);
 
 	{
-		_crate addBackpackCargoGlobal [_x, 1];
+		_crate addBackpackCargoGlobal [_x select 0, (_x select 1) + floor random(((_x select 2) + 1) - (_x select 1))];
 	} forEach (_type select 4);
 	
 	if(NOCLC_showCratesOnMap) then {

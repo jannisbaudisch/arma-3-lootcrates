@@ -6,63 +6,39 @@ NOCLC_showCratesOnMap = true;
 NOCLC_crateTypes = [
 	[
 		"B_supplyCrate_F",	//Ammo box classname
-		[
-			//Weapons
-			"srifle_LRR_LRPS_F",
-			"srifle_GM6_LRPS_F"
+		[		//Weapons
+			//[classname, min, max]
+			["srifle_LRR_LRPS_F",0,2],
+			["srifle_GM6_LRPS_F",0,2]
 		],
-		[
-			//Magazines
-			"7Rnd_408_Mag",
-			"7Rnd_408_Mag",
-			"7Rnd_408_Mag",
-			"7Rnd_408_Mag",
-			"7Rnd_408_Mag",
-			"5Rnd_127x108_Mag",
-			"5Rnd_127x108_Mag",
-			"5Rnd_127x108_Mag",
-			"5Rnd_127x108_Mag",
-			"5Rnd_127x108_Mag"
+		[		//Magazines
+			//[classname, min, max]
+			["7Rnd_408_Mag",0,10],
+			["5Rnd_127x108_Mag",0,10]
 		],
-		[
-			//Items
-			"FirstAidKit",
-			"FirstAidKit",
-			"FirstAidKit",
-			"FirstAidKit",
-			"FirstAidKit"
+		[		//Items
+			//[classname, min, max]
+			["FirstAidKit",2,5]
 		],
-		[
-			//Backpacks
+		[		//Backpacks
+			//[classname, min, max]
 		]
 	],
 	[
 		"B_CargoNet_01_ammo_F",	//Ammo box classname
 		[
 			//Weapons
-			"LMG_Mk200_MRCO_F",
-			"LMG_Zafir_ARCO_F"
+			["LMG_Mk200_MRCO_F",0,2],
+			["LMG_Zafir_ARCO_F",0,2]
 		],
 		[
 			//Magazines
-			"200Rnd_65x39_cased_Box",
-			"200Rnd_65x39_cased_Box",
-			"200Rnd_65x39_cased_Box",
-			"200Rnd_65x39_cased_Box",
-			"200Rnd_65x39_cased_Box",
-			"150Rnd_762x54_Box",
-			"150Rnd_762x54_Box",
-			"150Rnd_762x54_Box",
-			"150Rnd_762x54_Box",
-			"150Rnd_762x54_Box"
+			["200Rnd_65x39_cased_Box",0,10],
+			["150Rnd_762x54_Box",0,10]
 		],
 		[
 			//Items
-			"FirstAidKit",
-			"FirstAidKit",
-			"FirstAidKit",
-			"FirstAidKit",
-			"FirstAidKit"
+			["FirstAidKit",2,5]
 		],
 		[
 			//Backpacks
@@ -72,57 +48,24 @@ NOCLC_crateTypes = [
 		"Box_NATO_AmmoVeh_F",	//Ammo box classname
 		[
 			//Weapons
-			"hgun_P07_snds_F",
-			"hgun_P07_snds_F",
-			"hgun_P07_F",
-			"hgun_P07_F",
-			"hgun_P07_F",
-			"hgun_P07_F",
-			"hgun_P07_F"
+			["hgun_P07_snds_F",0,2],
+			["hgun_P07_F",0,8]
 		],
 		[
 			//Magazines
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag"
+			["150Rnd_762x54_Box",0,25]
 		],
 		[
 			//Items
-			"Rangefinder",
-			"Rangefinder",
-			"Rangefinder",
-			"NVGoggles",
-			"NVGoggles",
-			"NVGoggles"
+			["Rangefinder",0,4],
+			["NVGoggles",0,4]
 		],
 		[
 			//Backpacks
-			"B_Bergen_sgg",
-			"B_Bergen_mcamo",
-			"B_Bergen_rgr",
-			"B_Bergen_blk"
+			["B_Bergen_sgg",0,4],
+			["B_Bergen_mcamo",0,4],
+			["B_Bergen_rgr",0,4],
+			["B_Bergen_blk",0,4]
 		]
 	]
 ];
