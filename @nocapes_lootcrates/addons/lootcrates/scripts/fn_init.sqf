@@ -7,10 +7,16 @@ _cfg = execVM "\noclc\config.sqf";
 waitUntil{scriptDone _cfg;};
 for "_i" from 1 to (NOCLC_minCrates + floor random(NOCLC_maxCrates - NOCLC_minCrates)) do {
 	_type = NOCLC_crateTypes select (floor random count NOCLC_crateTypes);
-	_pos = [[15350,15350],0,21708,3,0,0.25,0,[],[0,0,-100]] call BIS_fnc_findSafePos;
+	_pos = [0,0,-100];
+	while {_pos isEqualTo [0,0,-100]} do {	//Prevent BIS_fnc_findSafePos from using defaultPos if no position was found
+		_pos = [[15350,15350],0,21708,3,0,0.25,0,[],[[0,0,-100],[0,0,-100]]] call BIS_fnc_findSafePos;
+	};
+	
 	_crate = (_type select 0) createVehicle _pos;
 	
 	_crate setDir random 360;
+	
+	//Create units
 	
 	clearWeaponCargoGlobal _crate;
 	clearMagazineCargoGlobal _crate;

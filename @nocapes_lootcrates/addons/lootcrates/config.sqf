@@ -53,7 +53,7 @@ NOCLC_crateTypes = [
 		],
 		[
 			//Magazines
-			["150Rnd_762x54_Box",0,25]
+			["16Rnd_9x21_Mag",0,25]
 		],
 		[
 			//Items
